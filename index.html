@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+  <style>
+    body {
+      background-color: powderblue;
+    }
+
+
+
+
+    .box {
+
+      position: absolute;
+
+    }
+
+    .overlay {
+      z-index: 9;
+      margin: 100px 300px;
+    }
+
+    
+    .btn{
+      height: 700px;
+      width: 900px;
+      color: #0a0a2300;
+      background-color:#0a0a2300;
+      border-color: #0a0a2300;
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+
+  <body>
+
+
+    
+    <div class="container">
+      <div class="box">
+        
+        <video id="myVideo" width="1905" height="1060" poster="thumb.png">
+          <source src="My Video1.mp4" type="video/mp4">
+        </video>
+
+      </div>
+      <div class="box overlay">
+        <button class="btn" onclick="playVid()" type="button">Play Video</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+      let vid = document.getElementById("myVideo");
+
+      function playVid() {
+        vid.play();
+      }
+
+      function pauseVid() {
+        vid.pause();
+      } 
+    </script>
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
